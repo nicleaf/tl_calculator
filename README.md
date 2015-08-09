@@ -1,10 +1,11 @@
 # README #
-TL - Lesson 1 - Assignment - Calculator
+## TL - Lesson 1 - Assignment - Calculator ##
 
 Started: 9 Aug 2015
+Status: Done
 
-Preudo code:
-1. Ask user do they want to continue
+Pseudo code:
+1. Ask user do they want to continue.
 2. Ask user to input 2 integers. 
 3. Get user to choose operator.
 4. Display result.
