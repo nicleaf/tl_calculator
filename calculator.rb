@@ -21,28 +21,18 @@ loop do
     loop do
       puts "Choose operator: a) Add  b) Subtract  c) multiple  d) divide"
       operator = gets.chomp
-      if operator.downcase == 'a'
-        result = number1.to_i + number2.to_i
-        answer(result)
-        break
-      elsif operator.downcase == 'b'
-        result = number1.to_i - number2.to_i
-        answer(result)
-        break
-      elsif operator.downcase == 'c'
-        result = number1.to_i * number2.to_i
-        answer(result)
-        break
-      elsif operator.downcase == 'd'
-        result = number1.to_f / number2.to_f
-        answer(result)
-        break
-      else
-        puts "Wrong INPUT! Try again!"          
-      end
+      result = case operator.downcase
+        when 'a' then number1.to_i + number2.to_i
+        when 'b' then number1.to_i - number2.to_i
+        when 'c' then number1.to_i * number2.to_i
+        when 'd' then number1.to_f / number2.to_f
+        else
+          puts "Wrong INPUT! Try again!"
+          next          
+        end
+      break answer(result)
     end
-
   elsif answer.downcase == 'n'
-    break      
+    break
   end
 end
