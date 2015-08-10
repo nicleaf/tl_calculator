@@ -14,10 +14,14 @@ loop do
   puts "Do you want to do some simple calculation? (y/n)"
   answer = gets.chomp
   if answer.downcase == 'y'
-    questions("first")
-    number1 = gets.chomp
-    questions("second")
-    number2 = gets.chomp
+    begin
+      questions("first")
+      number1 = gets.chomp
+    end until number1.to_i != 0
+    begin 
+      questions("second")
+      number2 = gets.chomp
+    end until number2.to_i != 0
     loop do
       puts "Choose operator: a) Add  b) Subtract  c) multiple  d) divide"
       operator = gets.chomp
