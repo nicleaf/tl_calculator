@@ -1,7 +1,7 @@
 # README #
 ## TL - Lesson 1 - Assignment - Calculator ##
 
-Started: 9 Aug 2015
+Started: 9 Aug 2015  
 Status: Done
 
 Pseudo code:
